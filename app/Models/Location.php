@@ -16,12 +16,12 @@ class Location extends Model
         return $this->hasMany(Male::class, 'location_id', 'id');
     }
 
-    public function female()
+    public function females()
     {
         return $this->hasMany(Female::class, 'location_id', 'id');
     }
 
-    public function other()
+    public function others()
     {
         return $this->hasMany(Other::class, 'location_id', 'id');
     }
