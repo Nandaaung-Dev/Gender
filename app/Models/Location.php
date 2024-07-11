@@ -11,7 +11,7 @@ class Location extends Model
 
     protected $fillable = ['name'];
 
-    public function male()
+    public function males()
     {
         return $this->hasMany(Male::class, 'location_id', 'id');
     }
